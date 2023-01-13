@@ -1,10 +1,10 @@
 ''' Link (https://py.checkio.org/en/mission/sum-numbers/)
 '''
-
+'''
 def sum_number(text):
-    '''Esta función nos ayuda a sumar
+    """Esta función nos ayuda a sumar
     dos números que estan dentro de un String
-    ingresado por el usuario'''
+    ingresado por el usuario"""
 
     mensaje = text.split()
     nums = {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5,
@@ -23,6 +23,19 @@ def sum_number(text):
             sum += int(i)
 
     print(sum)
+'''
+
+def sum_number(text):
+    ''''''
+    mensaje = text.split()
+    sum = 0
+
+    for i in mensaje:
+        if (i.isdigit()):
+            sum += int(i)
+
+    return sum
+
 
 mensaje = input("Ingrese un mensaje: ")
-sum_number(mensaje)
+print(sum_number(mensaje))
